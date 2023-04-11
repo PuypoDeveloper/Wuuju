@@ -1,0 +1,526 @@
+.aboutMain {
+    background-color: #0e222c;
+    display: grid;
+    grid-template-rows: 1fr 1.5fr 2fr 1.5fr 1fr 1.5fr;
+    height: 91vh;
+    z-index: 999;
+}
+.title { 
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    margin-top: 1em;
+}
+.ctnTtitle { 
+    width: 30em;
+    height: 80%;
+    display: flex;
+    gap: 1em;
+    justify-content: center;
+    align-items: center;
+}
+.copDivisa { 
+    display: none;
+}
+
+/*ESTILOS TEXTO*/
+
+.textOne { 
+    width: 100%;
+    height: 100%;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+}
+.ctnTextOne { 
+    width: 50vw;
+    height: 80%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: white;
+}
+.textDateAbout{ 
+    color: #46eab3;
+    cursor: pointer;
+}
+
+/*ESTILOS CHOCOLATE ESPESO*/
+
+.accounts { 
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+}
+.ctnAccounts { 
+    width: 80vw;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    position: relative;
+
+}
+
+.subtitleOne { 
+    -webkit-text-stroke: 1px #FFFFFF;
+    -webkit-text-fill-color: #0B1B23; 
+    font-weight: 900;
+    font-size: 2em;
+}
+
+.subtitleTwo { 
+    color: #ec6e73;
+    font-weight: 500;
+    font-size: 2em;
+    text-shadow: 1px 2px 1px rgba(0,0,0,0.5);
+    margin-bottom: -0.4em;
+}
+
+.ctnTitles { 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    height: 2em;
+    gap: 1em;
+    top: -0em;
+    padding: 0em 2em;
+    background-image: linear-gradient(to bottom, #0E222C 50%, #0B1B23 50%);
+}
+.ctnAccountsTwo{ 
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 70%;
+    height: 80%;
+    border-bottom-left-radius: 40px;
+    border-bottom-right-radius: 40px;
+    border: solid 2px #46eab3;
+    background-color:#0B1B23 ;
+    color: white;
+
+}
+
+/*ESTILOS EN CAJAS INDIVIDUALES DENTRO DE CHOCOLATE ESPESO*/
+
+.priceProduct { 
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 0.5em;
+
+}
+.priceProduct h4 { 
+    margin-left: -2em;
+}
+
+.subtitlesThree { 
+    font-size: 20px;
+}
+.priceNum,
+.priceNum2 { 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 0.5em;
+}
+.ctnPriceNum,
+.ctnPriceNum2 { 
+    width: 6em;
+    height: 2em;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: solid 2px #46eab3; 
+}
+
+.ctnDivisas {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 25%;
+    height: 18%;
+    position: absolute;
+    bottom: 0.3em;
+    background-image: linear-gradient(#0B1B23 50%, #0E222C 50%);
+  }
+
+/*ESTILO PRECIO FINAL*/
+
+.finalPrice { 
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+}
+
+.ctnFinalPrice { 
+    width: 80vw;
+    height: 80%;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    gap: 3em;
+    color: white;
+
+}
+
+.finalPriceTEXT { 
+    display: flex;
+    height: 100%;
+    width: 20%;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+}
+.TitlePriceEndOne { 
+    font-size: 3em;
+    font-weight: 900;
+    color: #0B1B23;
+    -webkit-text-stroke: 1px #FFFFFF;
+    -webkit-text-fill-color: #0B1B23; 
+}
+.TitlePriceEndTwo { 
+    color: #ec6e73;
+    font-weight: 500;
+    font-size: 3.5em;
+    text-shadow: 1px 2px 1px rgba(0,0,0,0.5);
+    margin-bottom: -0.4em;
+    top: 30%;
+    left: 45%;
+    position: absolute;
+}
+
+.finalPriceNum { 
+    height: 100%;
+    width: 25%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.ctnNumPrice { 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1em;
+    height: 4em;
+    width: 110%;
+}
+.textCop { 
+    font-size: 23px;
+    margin-top: -0.7em;
+}
+
+/*ESTILOS TICTAC*/
+
+.ticTac { 
+    display: grid; 
+    width: 100%;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+}
+.ctnTicTac { 
+    width: 80vw;
+    height: 80%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    text-align: center;
+
+
+}
+
+/*ESTILOS ORDENAR AHORA*/
+
+.orderBtn { 
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+}
+.ctnOrderBtn { 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 80vw;
+    height: 80%;
+    gap: 1em;
+}
+.textOneOne { 
+    font-size: 2EM;
+    font-weight: 900;
+    color: #0B1B23;
+    -webkit-text-stroke: 1px #FFFFFF;
+    -webkit-text-fill-color: #0B1B23; 
+    margin-top: -0.6em;
+}
+.textTwoTwo,
+.textTwoTwoO { 
+    font-size: 2em;
+    color: #ec6e73;
+    font-weight: 500;
+    text-shadow: 1px 2px 1px rgba(0,0,0,0.5);
+    position: absolute;
+    top: 10%;
+    right:-20%;
+}
+.textTwoTwoO { 
+    top: 10%;
+    right:20%;
+}
+
+
+/*CONTENEDORES*/
+.newCotizacion { 
+    height: 90%;
+    width: 25%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    position: relative;
+    padding: 0.7em;
+    cursor: pointer;
+}
+.newOrder { 
+    height: 90%;
+    width: 25%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    position: relative;
+    padding: 0.7em;
+    cursor: pointer;
+}
+.ctnTitleBoxLeft,
+.ctnTitleBoxRight { 
+    position: absolute;
+}
+.newCotizacion img { 
+    transform: scaleX(-1);
+    width: 20em;
+}
+.newOrder img { 
+    width: 19em;
+}
+
+/*RESPONSIVE*/
+
+@media(max-height: 750px) { 
+    .aboutMain {
+        height: auto;
+    }
+}
+@media(max-width: 1350px) { 
+    .finalPriceNum { 
+        width: 17em;
+    }
+    .ctnFinalPrice { 
+        gap: 5em;
+    }
+    .ctnOrderBtn { 
+        gap: 5em;
+    }
+    .ctnAccountsTwo { 
+        width: 55em;
+    }
+    .ctnTextOne { 
+        width: 50em;
+    }
+
+}
+
+@media(max-width: 950px) { 
+    .aboutMain {
+        height: auto;
+        grid-template-rows: 1fr 0.5fr 2fr 1fr 0.5fr 1fr;
+    }
+    .ctnFinalPrice { 
+        gap: 7em;
+    }
+    .ctnOrderBtn { 
+        gap: 10em;
+    }
+    .ctnAccountsTwo { 
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        gap: 1em;
+        width: 30em;
+        height: 22em;
+    }
+    .ctnTextOne { 
+        width: 40em;
+    }
+    .subtitleOne,
+    .subtitleTwo { 
+        font-size: 1.5em;
+    }
+    .ctnTitles { 
+        top: 0em;
+    }
+    .priceProduct { 
+        width: 18em;
+        gap: 0.2em;        
+        
+    }
+    .subtitlesThree { 
+        margin-left: 0em  !important; ;
+    }
+    .ctnPriceNum,
+    .ctnPriceNum2 { 
+        width: 12em;
+    }
+    .ctnPriceNum2 { 
+        margin-left: 1em;
+        
+    }
+    .ctnDivisas { 
+        bottom: -1em;
+    }
+    .accounts { 
+        margin-top: 2em;
+    }
+    .finalPrice { 
+        margin-top: 2em;
+    }
+    .ctnTicTac { 
+        font-size: 17px;
+    }
+
+}
+@media(max-width: 700px) {
+    .aboutMain {
+        height: auto;
+        grid-template-rows: 0.5fr 0.3fr 1fr 0.5fr 0.3fr 0.5fr;
+    }
+    .ctnTextOne { 
+        width: 30em;
+        font-size: 15px;
+    }
+    .textOne { 
+        margin-top: -3em;
+    }
+    .accounts { 
+        margin-top: 1em;
+    }
+    .ctnFinalPrice { 
+        display: flex;
+        flex-direction: column;
+        gap: 0em;
+        margin-bottom: 2em;
+        margin-top: 2em;
+    }
+    .ctnDivisas { 
+        bottom: -1em;
+    }
+    .ctnTitles { 
+        top: -0.5em;
+    }
+    .ctnOrderBtn { 
+        display: flex;
+        flex-direction: column;
+        gap: 0em;
+    }
+    .finalPriceNum { 
+        margin-left: 4em;
+    }
+    .title { 
+        margin-top: -3em;
+    }
+    .newCotizacion, 
+    .newOrder { 
+        height: 7em;
+    }
+    .newOrder { 
+        margin-bottom: 2em;
+    }
+}
+
+@media(max-width: 580px) { 
+    .ctnTitles { 
+        display: flex;
+        flex-direction: column;
+        gap: 0em;
+    }
+    .subtitleTwo { 
+        position: absolute;
+        top: 0.7em;
+    }
+    .ctnAccountsTwo { 
+        width: 20em;
+    }
+    .ctnTtitle { 
+        width: 22em ;
+    }
+    .ctnTextOne { 
+        width: 25em;
+    }
+}
+
+@media (max-width: 400px) { 
+    .ctnTtitle { 
+        font-size: 13px;
+    }
+    .ctnTextOne { 
+        width: 21em;
+        font-size: 14px;
+    }
+    .ctnAccountsTwo { 
+        width: 17em;
+    }
+    .ctnTitles { 
+        width: 13em;
+    }
+    .finalPriceNum { 
+        width: 15em;
+        margin-left: 2em;
+    }
+    .priceNum { 
+        width: 13em;
+    }
+    .priceNum2 { 
+        width: 15em;
+    }
+}
+@media (max-width: 300px) { 
+    .ctnTtitle { 
+        font-size: 12px;
+    }
+    .ctnTextOne { 
+        width: 20em;
+        font-size: 13px;
+    }
+    .ctnAccountsTwo { 
+        width: 15em;
+    }
+    .ctnTitles { 
+        width: 13em;
+    }
+    .finalPriceNum { 
+        width: 14em;
+        margin-left: 2em;
+    }
+    .priceNum { 
+        width: 12em;
+    }
+    .priceNum2 { 
+        width: 14em;
+    }
+}

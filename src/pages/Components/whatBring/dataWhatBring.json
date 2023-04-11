@@ -1,0 +1,14 @@
+{ 
+    "number": "1", 
+    "title": "¿Qué quieres traer?", 
+    "textOne": "Aquí tienes lo que más han traido con nosotros los",
+    "textTwo": "Wuujulovers <3.",
+    "textThree": "Selecciona una de éstas opciones para continuar", 
+    "textBtnOne": "CELULAR",
+    "textBtnTwo": "LAPTOP", 
+    "textBtnThree": "TABLET",
+    "textBtnFour": "COMPONENTES DE PC",
+    "textBtnFive": "OTRO",
+    "textBtn": "Continuar"
+
+}

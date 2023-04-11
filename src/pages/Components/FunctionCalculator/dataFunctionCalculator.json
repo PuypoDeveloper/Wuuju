@@ -1,0 +1,22 @@
+{ 
+    "number": "3", 
+    "title": "Ahora, a calcular",
+    "textOne":"Por favor, ingresa los siguientes datos acerca del artículo que quieres traer con nosotros.",
+    "textTwo":"Presiona",
+    "textThree":"aquí",
+    "textFour":"si quieres visualizar los valores en pesos colombianos COP.",
+    "textFive":"Si, quiero asegurar mi paquete.",
+    "textSix":"¿Qué cubre el seguro?",
+    "textHere": "Entérate aquí",
+    "textBtnOne": "Calcular",
+    "textBtnBack": "Regresar",
+    "textBtnNext": "Continuar",
+    "textBtnCalculate": "Calcular",
+    "textModalOne": "¿Todo bien en casa?",
+    "textModalTwo": "El valor que has infresado es superior a 2200 USD. ¿Estas seguto de continuar ?",
+    "textModalBtnOne": "Ups",
+    "textModalBtnTwo": "Tranqui",
+    "textModal2_Two": "Una vez enviada la informacion suministrada, no podras cambiarla y deberas hacer un registro nuevo en caso de que hayas cometido un error, ¿estas seguro de que quieres enviar estos datos ?",
+    "textModal2_BtnOne": "Zonas, dame tiempo",
+    "textModal2_BtnTwo": "Tranqui, al toque"
+}

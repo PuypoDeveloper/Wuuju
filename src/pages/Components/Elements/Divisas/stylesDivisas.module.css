@@ -1,0 +1,131 @@
+.mainDivisa { 
+    display: grid;
+    width: 100%;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+
+}
+.ctnDivisas { 
+    display: flex;
+    gap: 2.5em;
+    justify-content: center;
+    align-items: center;
+    width: 24em;
+    height: 100%;
+
+
+}
+.usa img{ 
+    width: 30%;
+    height: 100%;
+    right: -1.8em;
+    position: absolute;
+    border-radius: 70px;
+}
+.cop img { 
+    width: 30%;
+    height: 100%;
+    left: -1.8em;
+    position: absolute;
+}
+.usa { 
+
+    display: flex;
+    justify-content: right;
+    align-items: center;
+    width: 100%;
+    height: 2em;
+    position: relative;
+}
+
+.ctnText { 
+    background-color: #0B1B23;
+    border: solid 2px #46eab3 ;
+    width: 70%;
+    height: 1.4em;
+    border-top-left-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.ctnTextTwo { 
+    background-color: #0B1B23;
+    border: solid 2px #46eab3 ;
+    width: 70%;
+    height: 1.4em;
+    border-top-right-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.cop{ 
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    width: 100%;
+    height: 2em;
+    position: relative;
+}
+.ctnIcon { 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+.icon { 
+    transform: rotate(90deg);
+    font-size: 30px;
+    color: #46eab3b6 ;
+}
+.ctnIcon { 
+    width: 3em;
+}
+.textDolar { 
+    color: white;
+    text-align: center;
+    font-size: 14px;
+}
+
+@media (max-width: 450px) { 
+    .textDolar { 
+        font-size: 14px;
+    }
+}
+@media (max-width: 380px) { 
+    .ctnDivisas { 
+        width: 20em;
+    }
+    .ctnText { 
+        width: 90%;
+    }
+    
+    .ctnTextTwo { 
+        width: 90%;
+    }
+    .usa img{ 
+        right: -1.3em;
+    }
+    .cop img { 
+        left: -1.3em;
+    }
+}
+
+@media (max-width: 330px) { 
+    .ctnDivisas { 
+        width: 18em;
+    }
+    .ctnText { 
+        width: 90%;
+    }
+    .usa img{ 
+        width: 35%;
+    }
+    .cop img { 
+        width: 35%;
+    }
+    .ctnDivisas{ 
+        gap: 1.5em;
+    }
+}

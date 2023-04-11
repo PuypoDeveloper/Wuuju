@@ -1,0 +1,94 @@
+.ctnButton{ 
+    background-color: #0E222C;
+    height: 100%;
+    width: 100%;
+    border: solid 1px #46eab3;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+.btnGreen { 
+    min-width: 95%;
+    min-height: 88%;
+    background-color: #0E222C;
+    border: solid 1px #46eab3;
+    color: #46eab3;
+    font-size: 1.2em;
+    cursor: pointer;
+}
+
+.btnGreentwo { 
+    min-width: 97%;
+    min-height: 86%;
+    background-color: #0E222C;
+    border: solid 1px #46eab3;
+    color: #46eab3;
+    font-size: 1.2em;
+    cursor: pointer;
+}
+
+.ChangeColotOne { 
+    background-color: #ec6e73 !important;
+    color: white !important;
+    font-size: 25px;
+    border: none !important;
+    transition: 0.2s ease-in-out;
+    text-shadow: 2px 4px 1px  rgba(0, 0, 0, 0.5);
+}
+
+.ChangeColorTwo { 
+    background-color: #09171E;
+}
+.ChangeColotThree { 
+    background-color: #ec6e73 !important;
+    border: none !important;
+    transition: 0.4s ease-in-out;
+    box-shadow: 4px 2px 5px 1px black;
+}
+
+.ctnButton2 { 
+    background-color: #09171E;
+    height: 100%;
+    width: 100%;
+    border-radius: 60px;
+    border: solid 1px #46eab3;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    padding: 0.3em 0.1em;
+}
+.BtnGreenTwo { 
+    width: 95%;
+    padding: 0.4em 0.5em;
+    border-radius: 40px;
+    background-color: #09171E;
+    border: solid 1px #46eab3;
+    color: #46eab3;
+    font-size: 1.2em;
+    cursor: pointer;
+}
+
+.BtnBlock { 
+    width: 95%;
+    padding: 0.4em 0.5em;
+    border-radius: 40px;
+    background-color: #09171E !important;
+    border: solid 1px #46eab362 !important;
+    color: #46eab362 !important;
+    font-size: 1.2em;
+    cursor: pointer;
+}
+.textInBtn { 
+    font-size: 23px;
+}
+
+/*RESPONSIVE*/
+
+@media (max-width: 400px) { 
+    .textInBtn { 
+        font-size: 15px;
+    }
+}

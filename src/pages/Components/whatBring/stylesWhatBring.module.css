@@ -1,0 +1,340 @@
+.mainBring { 
+    background-color: #0e222c;
+    display: grid;
+    grid-template-rows: 1.5fr 1fr 3fr 1fr;
+    height: 91vh;
+    z-index: 999;
+}
+.title { 
+    display: grid;
+    justify-content: center;
+    align-items: center;
+}
+.ctnTitle { 
+    width: 80vw;
+    height: 80%;
+    display: flex;
+    gap: 3em;
+    justify-content: center;
+    align-items: center;
+    margin-left: 0em;
+}
+.ctnTitleIn { 
+    display: flex;
+    min-width: 50%;
+    min-height: 4em;
+    font-size: clamp(1em, 2vw, 1.3em);
+}
+.ctnNumberTitle { 
+    width: 2.5em;
+    height: 3.8em;
+    margin-top: 1.5em;
+    font-size: clamp(0.7em, 2vw, 0.9em);
+    margin-top: -0.5em;
+
+}
+
+/*ESTIOS TEXTO*/
+.text{ 
+    display: grid;
+    justify-content: center;
+    align-items: center;
+}
+.ctnTextBring { 
+    display: flex;
+    flex-direction: column;
+    width: 80vw;
+    height: 80%;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-size: clamp(1em, 3vw, 1.5em);
+}
+.ctnTextBringTwo { 
+    display: flex;
+    gap: 0.3em;
+    text-align: center;
+}
+.textInt { 
+    color: white;
+}
+.textIntTwo {
+    color: #ec6e73;
+}
+
+/*ESTILOS BOTONES*/
+
+.btnsBring { 
+    display: grid;
+    grid-template-columns: 5fr, 1fr; ;
+    justify-content: center;
+    align-items: center;
+    margin-top: -2em;
+    max-height: 20em;
+    position: relative;
+}
+.ctnBtinBring { 
+    display: grid;
+    gap: 0.5em;
+    grid-template-columns: repeat(auto-fit, minmax(10em, 1fr));
+    width: 45vw;
+    min-height: 75%;
+    margin: auto;
+
+
+}
+.ctnOneBtn4 { 
+    grid-column-start: 1;
+    grid-column-end: 3;
+}
+.ctnOneBtn,
+.ctnOneBtn4 { 
+    max-height: 7em;
+    min-width: 10em;
+    text-decoration: none;
+    display: grid;
+    gap: 1em;
+}
+.linkComponents { 
+    text-decoration: none;
+}
+
+/*ESTILOS INPUT*/
+.input { 
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    bottom: -2em;
+    width: 100%;
+    display: none;
+
+}
+.ctnINput { 
+    display: flex;
+    gap: 1em;
+    justify-content: center;
+    align-items: center;
+    font-size: clamp(0.7em, 3vw, 1em);
+}
+.ctnINput h2 { 
+    color: white;
+    font-size: 1.5em;
+}
+.ctnINput input { 
+    border-radius: 20px;
+    padding: 0.8em 0.5em;
+    border: none;
+    color: #EC6E73;
+
+
+}
+.ctnINput input::placeholder { 
+    color: #EC6E73;
+    font-size: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+
+}
+
+.inputIsWhat:focus { 
+    outline:none;
+    border: solid 2px #EC6E73;
+    text-align: center;
+
+}
+.ctnSend { 
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.ctnSend { 
+    color: white;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.sendIcon { 
+    color:  #46eab3;
+    transition: 0.3s;
+}
+
+.sendIcon:hover { 
+    scale: 1.1;
+    color: #46eab3b0;
+}
+
+
+/*ESTILOS PAGINACION*/
+.pagination { 
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+.pagination { 
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 80vw;
+    height: 80%;
+    position: relative;
+
+}
+
+/*ESTILOS BOTON CONTINUAR*/
+
+.btnContinue { 
+    position: absolute;
+    bottom: 2em;
+    right: 2em;
+    height: 3em;
+    width: 12em;
+    z-index: 1;
+}
+.linkContinuar { 
+    text-decoration: none;
+}
+
+/*RESPONSIVE*/
+@media screen and (max-width: 1115px) {
+    .ctnOneBtn4 { 
+        order: 2;
+    }
+}
+@media screen and (max-width: 1030px) {
+
+    .ctnBtinBring { 
+        grid-template-columns: repeat(auto-fit, minmax(20em, 1fr));
+        min-width: 75vw;
+        min-height: 70%; 
+    }
+}
+@media screen and (max-width: 700px) {
+
+    .ctnBtinBring { 
+        grid-template-columns: repeat(auto-fit, minmax(15em, 1fr));
+        min-width: 75vw;
+        min-height: 70%; 
+    }
+    .text{ 
+        margin-top: -2em;
+    }
+    .input { 
+        width: 100%;
+    }
+}
+@media screen and (max-width: 550px) {
+    .ctnBtinBring { 
+        width: 90vw;
+    }
+    .ctnTitleIn { 
+        font-size: clamp(0.8em, 2vw, 1.3em);
+        min-height: 5em;
+    }
+}
+@media screen and (max-width: 450px) {
+    .ctnBtinBring { 
+        grid-template-columns: repeat(auto-fit, minmax(8em, 1fr));
+        width: 90vw;
+    }
+    .ctnOneBtn,
+    .ctnOneBtn4 { 
+        max-height: 5em;
+        min-width: 8em;
+    }
+    .ctnTitleIn { 
+        min-width: 80%;
+    }
+    .ctnTitleIn { 
+        font-size: clamp(0.8em, 2vw, 1.3em);
+    }
+    .ctnNumberTitle { 
+        font-size: clamp(0.5em, 2vw, 0.9em); 
+    }
+    .ctnINput input { 
+        border-radius: 20px;
+        padding: 0.3em 0.1em;
+    
+    }
+    .input { 
+        bottom: 0em;
+    }
+    .ctnINput input::placeholder { 
+        font-size: 15px;
+    }
+
+}
+@media screen and (max-width: 370px) {
+    .ctnTitleIn { 
+        font-size: clamp(0.6em, 2vw, 1.3em);
+        min-height: 6em;
+        text-align: center;
+    }
+}
+@media screen and (max-width: 350px) {
+    .input { 
+        bottom: 0em;
+    }
+    .ctnTitleIn { 
+        font-size: clamp(0.6em, 2vw, 1.3em);
+        min-height: 6em;
+        text-align: center;
+    }
+    .ctnINput { 
+        font-size: clamp(0.4em, 3vw, 1em);
+    }
+    .ctnINput input { 
+        border-radius: 20px;
+        padding: 0.3em 0.1em;
+    
+    }
+}
+@media(max-height:740px) { 
+    .mainBring { 
+        height: 100vh;
+    }
+}
+@media(max-height:670px) { 
+    .input { 
+        bottom: -0.5em;
+    }
+}
+@media(max-height:600px) and (min-width: 500px) { 
+    .mainBring { 
+        height: auto;
+        gap: 3em;
+    }
+    .input { 
+        bottom: -2em;
+    }
+}
+@media(max-height:600px) and (max-width: 650px) { 
+    .mainBring { 
+        gap: 5em;
+    }
+    .title { 
+        margin-top: 1em;
+        margin-bottom: 0em;
+    }
+    .text { 
+        margin-top: -4em;
+    }
+    .btnsBring { 
+        margin-top: -7em;
+    }
+}
+@media(max-height:500px) and (max-width: 500px) { 
+    .mainBring { 
+        height: auto;
+        gap: 4em;
+    }
+    .input { 
+        bottom: -2em;
+    }
+}

@@ -1,0 +1,19 @@
+{ 
+    "number": "1", 
+    "title": "¿Qué quieres traer?",
+    "titleTwo": "TIPO DE PRODUCTO",
+    "textOne": "Selecciona una de éstas opciones para continuar",
+    "textBtnOne": "CPU",
+    "textBtnTwo": "GPU",
+    "textBtnThree": "RAM",
+    "textBtnFour": "SSD",
+    "textBtnFive": "M.2",
+    "textBtnSix": "HDD",
+    "textBtnSeven": "MONITOR",
+    "textBtnEight": "MOTHERBOARD",
+    "textBtnNine": "PSU",
+    "textBtnTen": "OTRO",
+    "textBtnNext": "CONTINUAR",
+    "textBtnBack": "REGRESAR"
+
+} 

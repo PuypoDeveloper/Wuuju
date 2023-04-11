@@ -1,0 +1,40 @@
+.ctnBtnAndText { 
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.ctnPrice { 
+    width: 100%;
+    height: 100%;
+    background-color: #0e222c;
+    border: solid 2px #46eab3;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0.5em;
+}
+.ctnPrice p { 
+    font-size: 35px;
+    color: #46eab3;
+}
+
+@media(max-width: 750px) { 
+    .ctnPrice p { 
+        font-size: 25px;
+        color: #46eab3;
+    }
+}
+@media(max-width: 480px) { 
+    .ctnPrice p { 
+        font-size: 18px !important;
+        color: #46eab3;
+    }
+    .ctnBtnAndText p { 
+        font-size: 10px;
+    }
+}

@@ -1,0 +1,27 @@
+{  
+    "publicData": { 
+        "typeProduct": "", 
+        "nameProduct": "",
+        "date":"",
+        "priceProductPublic": 0
+    },
+    "internalData": { 
+        "typeProduct": "", 
+        "nameProduct": "",
+        "Shop": "", 
+        "seller":"shop", 
+        "date":"",
+        "weight": "",
+        "valueUSD": 0, 
+        "tarifa": 0,
+        "total": 0,
+        "link": "",
+        "dolar": "",
+        "public":"",
+        "arancel": "",
+        "subtotal": "",
+        "sure": 0,
+        "tax":0
+
+    }
+}

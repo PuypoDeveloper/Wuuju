@@ -1,0 +1,504 @@
+.mainComponents{ 
+    background-color: #0e222c;
+    display: grid;
+    grid-template-rows: 0.5fr 0.5fr 2fr;
+    height: 91vh;
+    gap: 1em;
+    z-index: 999;
+}
+
+.title { 
+    display: grid;
+    justify-content: center;
+    align-items: center;
+}
+.ctntitle,
+.ctnText { 
+    width: 80vw;
+    height: 80%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 4em;
+
+}
+
+.ctnNumberTitle { 
+    width: 2.5em;
+    height: 3.8em;
+
+    font-size: clamp(0.7em, 2vw, 0.8em);
+}
+.ctnTitleTwo { 
+    display: flex;
+    max-width: 100%;
+    min-height: 70%;
+    font-size: clamp(1em, 2.5vw, 1.2em);
+}
+.ctnText h3 { 
+    font-size: clamp(1.5em, 2.5vw, 2.2em);
+}
+.ctnText p { 
+    font-size: clamp(1.3em, 2vw, 1.5em);
+}
+
+/*ESTILOS TEXTOS */
+.text { 
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+.ctnText { 
+    flex-direction: column;
+    gap: 0.3em;
+}
+.ctnText{ 
+    color: white;
+}
+
+/*ESTILOS BOTONES*/
+
+.ctnButtons { 
+    display: Grid;
+    justify-content: center;
+    max-height: 25em ;
+    position: relative;
+
+
+}
+
+.ctnButtons_2 { 
+    display: grid;
+    max-height: 70%;
+    min-width: 80vw;
+    grid-template-columns: repeat(auto-fill, minmax(13em, 1fr, 1fr));
+    grid-auto-flow: dense;
+    gap: 1em;
+    position: relative;
+}
+.ctnButonComponents,
+.ctnButonComponentsEight,
+.ctnButonComponentsSeven { 
+    max-height: 6em;
+    text-decoration: none;
+}
+
+.ctnButonComponentsSeven { 
+    grid-column-start: 1;
+    grid-column-end: 3;
+
+}
+.ctnButonComponentsEight { 
+    grid-column-start: 3;
+    grid-column-end: 5;
+
+}
+
+/*ESTILOS INPUT*/
+.input H2 { 
+    color: white;
+    font-size: clamp(1.1em, 2vw, 1.8em);
+}
+.input { 
+    position: absolute;
+    display: none;
+    justify-content: center;
+    align-items: center;
+    gap: 1em;
+    bottom: 2em;
+    width: 100%;
+
+}
+
+.input input{ 
+    border-radius: 20px;
+    padding: 0.8em 0.5em;
+    border: none;
+    color: #EC6E73;
+
+}
+.input input::placeholder { 
+    color: #EC6E73;
+    font-size: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.ctnSend { 
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.ctnSend { 
+    color: white;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.sendIcon { 
+    color:  #46eab3;
+    transition: 0.3s;
+}
+
+.sendIcon:hover { 
+    scale: 1.1;
+    color: #46eab3b0;
+}
+
+/*ESTILOS PAGINACION*/
+
+.pagination { 
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    gap: 1em;
+    margin-bottom: 2em;
+    width: 100%;
+
+}
+
+/*ESTILOS BOTONES*/
+
+.btnLeft { 
+    position: absolute;
+    left: 4em;
+    bottom: 3em;
+    height: 3em;
+    width: 12em;
+    z-index: 1;
+}
+.linkBack { 
+    text-decoration: none;
+}
+.linkNext { 
+    text-decoration: none;
+}
+.inputIsWhat:focus { 
+    outline:none;
+    border: solid 2px #EC6E73;
+    text-align: center;
+}
+
+.arrowBack { 
+    display: none;
+}
+
+/*RESPONSIVE*/
+@media (max-width: 900px) { 
+    .btnLeft { 
+        left: 2em;
+        width: 10em;
+    }
+    .ctnNumberTitle { 
+        font-size: clamp(0.7em, 2vw, 0.9em);
+    }
+    .input input{ 
+        padding: 0.3em 0.1em;
+    
+    }
+    .input input::placeholder { 
+        font-size: 15px;
+    }
+}
+@media (max-width: 700px) { 
+    .pagination { 
+        justify-content: right;
+        margin-bottom: 2.5em;
+        width: 95%;
+    
+    }
+}
+
+@media(max-width: 600px) { 
+    .ctnButonComponentsSeven {
+        grid-column-start: initial;
+        grid-column-end: initial; 
+    } 
+        
+    .ctnButonComponentsEight {
+        grid-column-start: initial;
+        grid-column-end: initial;
+    }
+    .ctnButtons_2 { 
+        grid-template-columns: repeat(auto-fill, minmax(10em, 1fr));
+        min-width: 50vw;
+
+    }
+    .ctnButonComponents,
+    .ctnButonComponentsSeven,
+    .ctnButonComponentsEight { 
+        min-height: 2em;
+        max-height: 5em;
+        min-width: 14em;
+    }
+    .input { 
+        bottom: 1em;
+    } 
+}
+@media(max-width: 530px) { 
+    .ctnTitleTwo { 
+        font-size: clamp(0.7em, 2.5vw, 1.5em);
+    }
+    .ctnButtons { 
+        max-height: 30em ;    
+    }
+    .ctnButonComponents,
+    .ctnButonComponentsSeven,
+    .ctnButonComponentsEight { 
+        min-width: 12em;
+    }
+
+}
+@media(max-width: 470px) { 
+    .ctnTitleTwo { 
+        font-size: clamp(0.5em, 2.5vw, 1em);
+        width: 100%;
+        height: 6em;
+        margin-top: 1em;
+    }
+    .ctntitle { 
+        gap: 3em;
+    }
+    .btnLeft { 
+        display: none;
+    }
+    .pagination { 
+        justify-content: center;
+        width: 100%;
+    }
+    .arrowBack { 
+        display: flex;
+        flex-direction: column;
+        color: white;
+        justify-content: center;
+        align-items: center;
+        margin-left: 1em;
+        margin-top: 1em;
+    }
+    .arrow { 
+        background-color: #46eab3;
+        border-radius: 20px;
+        color: #0e222c;
+        margin-left: 0.2em;
+    }
+    .linkNext2 { 
+        color: white;
+        text-decoration: none;
+    }
+
+    .ctnButonComponents,
+    .ctnButonComponentsSeven,
+    .ctnButonComponentsEight { 
+        min-width: 12em;
+    }
+    .input { 
+        bottom: 2em;
+    }
+}
+@media(max-width: 400px) {
+    .ctnTitleTwo { 
+        height: 7em;
+        margin-top: 2em;
+    }
+    .ctnNumberTitle { 
+        font-size: clamp(0.6em, 2vw, 0.6em);
+        margin-top: 1em;
+    }
+    .ctnText h3 { 
+        font-size: clamp(1em, 2.5vw, 2.5em);
+    }
+    .ctnText p { 
+        font-size: clamp(0.8em, 2vw, 1.8em);
+    }
+    .input input{ 
+        padding: 0.3em 0.1em;    
+    }
+    .ctnButonComponents,
+    .ctnButonComponentsSeven,
+    .ctnButonComponentsEight { 
+        min-width: 8em;
+    }
+}
+@media (max-width: 350px) { 
+    .ctnButtons_2 { 
+        grid-template-columns: repeat(auto-fill, minmax(8em, 1fr));
+    }
+    .ctnButonComponents,
+    .ctnButonComponentsEight,
+    .ctnButonComponentsSeven { 
+    min-height: 1.5em;
+
+    }
+    .input H2 { 
+        color: white;
+        font-size: clamp(0.8em, 2vw, 1em);
+    }
+    
+    .input input{ 
+        border-radius: 20px;
+        padding: 0.3em 0.1em;
+        border: none;
+        color: #EC6E73;
+    
+    }
+
+    .pagination { 
+        margin-bottom: 2em;
+    
+    }
+    .ctnButonComponents,
+    .ctnButonComponentsSeven,
+    .ctnButonComponentsEight { 
+        min-width: 6em;
+    }
+    
+}
+@media(max-height: 670px) and (max-width: 470px) {
+    .input { 
+        bottom: -1em;
+    } 
+    .mainComponents{ 
+        height: auto;
+        display: flex;
+        flex-direction: column;
+        gap: 2em;
+    }
+    .ctnButtons { 
+        margin-bottom: 3em;
+    }
+}
+@media(max-height: 760px) and (max-width: 470px) { 
+    .input { 
+        margin-bottom: -2em;
+    }
+}
+@media (max-height: 640px) and (min-width: 750px) { 
+    .mainComponents{ 
+        display: grid;
+        height: auto;
+        gap: 3em;
+    }
+    .title { 
+        margin-top: 1em;
+        margin-bottom: 0em;
+    }
+    .text { 
+        margin: 0em; 
+    }
+    .input { 
+        bottom: -2em;
+    }
+    .btnLeft { 
+        display: none;
+    }
+    .arrowBack { 
+        display: flex;
+        flex-direction: column;
+        color: white;
+        justify-content: center;
+        align-items: center;
+        margin-left: 1em;
+        margin-top: 1em;
+    }
+    .arrow { 
+        background-color: #46eab3;
+        border-radius: 20px;
+        color: #0e222c;
+        margin-left: 0.2em;
+    }
+    .linkNext2 { 
+        color: white;
+        text-decoration: none;
+    }
+
+}
+@media (max-height: 640px) and (min-width: 500px) {
+    .mainComponents{ 
+        display: grid;
+        height: auto;
+        gap: 3em;
+    }
+    .title { 
+        margin-top: 1em;
+        margin-bottom: 0em;
+    }
+    .text { 
+        margin: 0em; 
+    }
+    .input { 
+        bottom: -3em;
+    }
+    .btnLeft { 
+        display: none;
+    }
+    .arrowBack { 
+        display: flex;
+        flex-direction: column;
+        color: white;
+        justify-content: center;
+        align-items: center;
+        margin-left: 1em;
+        margin-top: 1em;
+    }
+    .arrow { 
+        background-color: #46eab3;
+        border-radius: 20px;
+        color: #0e222c;
+        margin-left: 0.2em;
+    }
+    .linkNext2 { 
+        color: white;
+        text-decoration: none;
+    }
+ }
+ @media (max-height: 740px) and (max-width: 500px) {
+    .mainComponents{ 
+        display: grid;
+        height: auto;
+        gap: 3em;
+    }
+    .title { 
+        margin-top: 1em;
+        margin-bottom: 0em;
+    }
+    .text { 
+        margin: 0em; 
+    }
+    .input { 
+        bottom: -2em;
+    }
+    .btnLeft { 
+        display: none;
+    }
+    .arrowBack { 
+        display: flex;
+        flex-direction: column;
+        color: white;
+        justify-content: center;
+        align-items: center;
+        margin-left: 1em;
+        margin-top: 1em;
+    }
+    .arrow { 
+        background-color: #46eab3;
+        border-radius: 20px;
+        color: #0e222c;
+        margin-left: 0.2em;
+    }
+    .linkNext2 { 
+        color: white;
+        text-decoration: none;
+    }
+ }
+
+
+
+
+
+
+

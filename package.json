@@ -1,0 +1,32 @@
+{
+  "name": "wuuju_app",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint",
+    "cypress:browserstack": "browserstack-cypress run --sync --spec src/pages/windowAboutQuote.js"
+  },
+  "dependencies": {
+    "@emotion/react": "^11.10.6",
+    "@emotion/styled": "^11.10.6",
+    "@fontsource/roboto": "^4.5.8",
+    "@mui/icons-material": "^5.11.11",
+    "@mui/material": "^5.11.13",
+    "@mui/styled-engine-sc": "^5.11.11",
+    "@next/font": "^13.2.4",
+    "child_process": "^1.0.2",
+    "fs": "^0.0.1-security",
+    "google-auth-library": "^8.7.0",
+    "google-spreadsheet": "^3.3.0",
+    "googleapis": "^114.0.0",
+    "gsap": "^3.11.5",
+    "next": "13.2.4",
+    "react": "18.2.0",
+    "react-dom": "18.2.0",
+    "styled-components": "^5.3.9",
+    "use-google-sheets": "^2.0.0"
+  }
+}

@@ -1,0 +1,97 @@
+.Pagination { 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 0.5em;
+}
+.Pagination p { 
+    color: white;
+}
+.ctnNumbers { 
+    display: flex;
+    gap: 1em;
+}
+.number {
+    position: relative;
+    font-size: 20px;
+    background-color: #0B1B23;
+    color: #46eab3;
+    border: solid 3px #46eab3;
+    width: 1.5em;
+    height: 1.5em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 30px;
+  }
+  
+  .number::before {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: -20px;
+    transform: translateY(-50%);
+    height: 4px;
+    width: 20px;
+    background-color: aquamarine;
+  }
+  
+  .number:first-child::before {
+    display: none;
+  }
+  
+  .number:last-child::before {
+    width: 0;
+  }
+  
+  .number:nth-child(3)::after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 100%;
+    transform: translateY(-50%);
+    height: 4px;
+    width: 20px;
+    background-color: aquamarine;
+  }
+  
+  .number:nth-child(4)::before,
+  .number:nth-child(4)::after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: -20px;
+    transform: translateY(-50%);
+    height: 4px;
+    width: 20px;
+    background-color: aquamarine;
+  }
+  .paint { 
+    background-color: #46eab3;
+    color: #09171E ;
+  }
+
+/*RESPONSIVE*/
+
+@media (max-width: 380px) {
+    .number {
+        font-size: 18px;
+        width: 1em;
+        height: 1em;
+    }
+    .Pagination p { 
+        font-size: 0.8em;
+    }
+}
+
+@media(max-width: 650px) and (max-width: 650px) { 
+  .number {
+        font-size: 18px;
+        width: 1em;
+        height: 1em;
+    }
+    .Pagination p { 
+        font-size: 0.8em;
+    }
+}

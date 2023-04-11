@@ -1,0 +1,25 @@
+.ctnTitle { 
+    background-color: #0B1B23;
+    padding: 0.5em 1.5em;
+    border-top-left-radius: 35px;
+    border-top-right-radius: 0px;
+    border-bottom-right-radius: 35px;
+    border-bottom-left-radius: 0px;
+    border: solid #46eab3;
+    color:#46eab3 ;
+    letter-spacing: 0.1em;
+    font-size: 1.1em;
+    width: 100%;
+    min-height: 10%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/*RESPONSIVE*/
+
+@media (max-width: 450px) {
+    .ctnTitle {
+        padding: 0.5em 0.5em;
+    }
+}

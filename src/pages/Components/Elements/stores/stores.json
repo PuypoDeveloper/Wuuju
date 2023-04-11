@@ -1,0 +1,8 @@
+{ 
+    "imgOne": "./img/shops/Apple.svg",
+    "imgTwo": "/img/shops/Ebay.svg",
+    "imgThree": "/img/shops/Amazon.svg",
+    "imgFour": "/img/shops/NewEgg.svg",
+    "imgFive": "/img/shops/BestBuy.svg",
+    "imgSix": "/img/shops/BYH.svg"
+}

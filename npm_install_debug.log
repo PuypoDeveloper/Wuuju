@@ -1,0 +1,13 @@
+npm verb cli /usr/local/bin/node /usr/local/bin/npm
+npm info using npm@9.5.0
+npm info using node@v19.7.0
+npm verb title npm install
+npm verb argv "install" "--legacy-peer-deps" "--loglevel" "verbose"
+npm verb logfile logs-max:10 dir:/home/estebanpuyo/.npm/_logs/2023-04-03T02_53_39_855Z-
+npm verb logfile /home/estebanpuyo/.npm/_logs/2023-04-03T02_53_39_855Z-debug-0.log
+
+up to date, audited 1 package in 55ms
+
+found 0 vulnerabilities
+npm verb exit 0
+npm info ok 

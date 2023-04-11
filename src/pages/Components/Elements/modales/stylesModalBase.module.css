@@ -1,0 +1,214 @@
+.GoodHome { 
+    position: fixed;
+    background-color: #00000052;
+    height: 100vh;
+    width: 100%;
+    top: 0em;
+    left: 0em;
+    z-index: 2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    backdrop-filter: blur(5px);
+}
+.CloseModalGood { 
+    display: none;
+}
+.ctnGoodHome { 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 35%;
+    height: 35%;
+    border-radius: 20px;
+    border: solid 2px #46eab3; ;
+
+}
+.ctnGoodHomeTwo { 
+    background-color: #0e222c;
+    height: 92%;
+    width: 96%;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    position: relative;
+    border: solid 2px #46eab3;
+
+}
+.firstTextGoogHoome { 
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: clamp(1.5em, 2vw, 1.7em);
+    gap: 0.5em;
+    color: white;
+}
+.icon { 
+    font-size: 25px;
+    width: 2em !important;
+    height: 2em !important;
+    color: #46eab3 ;
+}
+.secondTextGoodHome { 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    width: 23em;
+    font-size: clamp(1em, 2vw, 1em);
+    color: white;
+    margin-top: -1em;
+}
+.cntIconGoogHome { 
+
+    width: 60%;
+    height: 20%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1em;
+}
+.ctnCloseModal { 
+    position: absolute;
+    top: 0.8em;
+    right: 0.8em;
+}
+.ctnFirstBtn { 
+    width: 50%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    text-decoration: none;
+
+}
+
+/*BOTONES*/
+.btnOne, 
+.btnTwo { 
+    width: 100%;
+    height: 100%;
+    border-radius: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: none;
+    background-color: #ec6e7200;
+}
+
+.ctnTextOne, 
+.ctnTexTwo { 
+    background-color: rgb(10, 19, 146);
+    border-radius: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 95%;
+    height: 88%;
+    font-size: clamp(1em, 1vw, 1.5em);
+}
+
+
+.btnOne { 
+    border: solid 2px #ec6e73;
+    transition: 0.25s;
+}
+.ctnTextOne { 
+    background-color: #ec6e73;
+    color: white;
+    cursor: pointer;
+    transition: 0.25s;
+}
+
+.ctnTextOne:hover { 
+    background-color: #ec6e72b6;
+}
+
+.btnTwo { 
+    border: solid 2px #46eab3;
+}
+.ctnTexTwo{ 
+    background-color: #46eab3;
+    transition:0.25s ;
+    cursor: pointer;
+}
+
+.ctnTexTwo:hover { 
+    background-color: #46eab3b6;
+}
+
+/*CLOSE*/
+
+.mainIcon { 
+    color: rgb(255, 8, 8);
+    cursor: pointer;
+    transition: 0.25s;
+}
+
+.IconIn { 
+    border-radius: 20px;
+    padding: 0em;
+    font-size: 30px;
+    background-image: radial-gradient(circle at center, rgb(14, 13, 13), rgba(0, 0, 0, 0));
+    background-size: 150% 150%;
+    background-position: center center;
+    border: solid 2px red;
+}
+
+.mainIcon:hover { 
+    scale: 1.1;
+}
+
+@media (max-width: 1200px) { 
+    .ctnGoodHome { 
+        width: 45%;
+        height: 35%;
+    }
+}
+@media (max-width: 900px) { 
+    .ctnGoodHome { 
+        width: 55%;
+        height: 35%;
+    }
+}
+@media (max-width: 780px) { 
+    .ctnGoodHome { 
+        width: 65%;
+        height: 35%;
+    }
+}
+@media (max-width: 610px) { 
+    .ctnGoodHome { 
+        width: 75%;
+    }
+}
+@media (max-width: 555px) { 
+    .ctnGoodHome { 
+        width: 90%;
+    }
+    .secondTextGoodHome { 
+        width: 16em;
+        font-size: clamp(1em, 2vw, 1em);
+    }
+    .cntIconGoogHome { 
+        width: 80%;
+    }
+}
+@media (max-width: 415px) { 
+    .secondTextGoodHome { 
+        width: 16em;
+        font-size: clamp(0.9em, 2vw, 1em);
+    }
+    .cntIconGoogHome { 
+        width: 90%;
+    }
+}
+
+@media(max-height:750px) { 
+    .ctnGoodHome { 
+        height:50%;
+    }
+}
